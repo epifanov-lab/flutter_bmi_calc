@@ -17,9 +17,22 @@ class _CounterWidgetState extends State<CounterWidget> {
       child: Container(
         height: double.infinity,
         child: Card(
-          child: Text(
-            widget._title,
-            textAlign: TextAlign.center,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                widget._title,
+                textAlign: TextAlign.center,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  FlatButton(
+                    child: Text("-"),
+                  ),
+                ],
+              )
+            ],
           ),
         ),
       ),

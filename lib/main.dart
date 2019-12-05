@@ -12,7 +12,7 @@ var appbar = AppBar(
 void main() {
   runApp(MaterialApp(
     theme: ThemeData.dark().copyWith(
-      accentColor: Colors.blueGrey[900],
+      accentColor: Colors.pink[200],
     ),
     home: Scaffold(
       appBar: appbar,

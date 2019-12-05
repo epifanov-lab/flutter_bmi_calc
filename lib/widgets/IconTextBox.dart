@@ -26,8 +26,8 @@ class _IconTextBoxState extends State<IconTextBox> {
         child: Card(
           child: FlatButton(
             color: _selected
-                ? ThemeData.dark().accentColor
-                : ThemeData.dark().cardColor,
+                ? Theme.of(context).accentColor
+                : Theme.of(context).cardColor,
             onPressed: () {
               setState(() {
                 _selected = !_selected;
@@ -48,6 +48,9 @@ class _IconTextBoxState extends State<IconTextBox> {
                 Text(
                   widget._title,
                   textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 24
+                  ),
                 ),
               ],
             ),
