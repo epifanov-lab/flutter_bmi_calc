@@ -11,7 +11,9 @@ var appbar = AppBar(
 
 void main() {
   runApp(MaterialApp(
-    theme: ThemeData.dark(),
+    theme: ThemeData.dark().copyWith(
+      accentColor: Colors.blueGrey[900],
+    ),
     home: Scaffold(
       appBar: appbar,
       body: MainWidget(),
@@ -31,9 +33,9 @@ class MainWidget extends StatelessWidget {
             child: Row(
               children: <Widget>[
                 SizedBox(width: PADDING),
-                IconTextBox("MALE", "images/male.svg"),
+                IconTextBox("MALE", "images/male.svg", true),
                 SizedBox(width: PADDING),
-                IconTextBox("FEMALE", "images/female.svg"),
+                IconTextBox("FEMALE", "images/female.svg", false),
                 SizedBox(width: PADDING),
               ],
             ),
