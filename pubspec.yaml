@@ -1,0 +1,30 @@
+name: bmi_calc
+description: BMI calculator
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter_svg: 0.15.0
+  cupertino_icons: ^0.1.2
+  flutter:
+    sdk: flutter
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - images/
+
+  fonts:
+    - family: Orbitron
+      fonts:
+        - asset: fonts/Orbitron-Bold.ttf
+        - asset: fonts/Orbitron-Medium.ttf
